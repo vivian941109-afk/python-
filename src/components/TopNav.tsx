@@ -72,15 +72,19 @@ export const TopNav: React.FC<TopNavProps> = ({ completedCount, totalChallenges 
           </a>
         </nav>
 
-        {/* Zone 3: 1 primary action */}
-        <div className="shrink-0">
+        {/* Zone 3: Primary action & student identifier in top-right */}
+        <div className="flex items-center gap-3.5 shrink-0">
           <button
             type="button"
             onClick={() => scrollToSection('challenge-lab')}
-            className="px-4 py-2 text-sm font-semibold text-white bg-sky-700 hover:bg-sky-800 rounded-lg transition-colors whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700 cursor-pointer"
+            className="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-white bg-sky-700 hover:bg-sky-800 rounded-lg transition-colors whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700 cursor-pointer"
           >
             {completedCount > 0 ? `實作挑戰 (${completedCount}/${totalChallenges})` : '開始實作挑戰'}
           </button>
+          <span className="hidden sm:inline-block h-4 w-px bg-slate-200" aria-hidden="true" />
+          <span className="text-sm font-medium text-slate-700 whitespace-nowrap shrink-0 tabular-nums">
+            b11413069李怡瑾
+          </span>
         </div>
       </div>
     </header>
