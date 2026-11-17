@@ -1,0 +1,6 @@
+{
+  "name": "Python 物件實驗室",
+  "description": "互動式 Python 物件導向與記憶體模型學習網頁，透過視覺化記憶體堆積、單步執行追蹤與實作挑戰，掌握物件參考、Class、封裝、繼承與多型。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
